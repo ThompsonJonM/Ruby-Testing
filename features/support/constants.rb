@@ -22,8 +22,8 @@ class Const
     # Users
     # 
     GOOGLE_USER = {
-        USERNAME => 'tests@qatesting.com',
-        PASSWORD => 'testing123'
+        :username => 'tests@qatesting.com',
+        :password => 'testing123'
     }
 
     # 
