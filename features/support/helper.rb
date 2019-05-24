@@ -20,7 +20,7 @@ module Helper
     # Function for resetting, then setting a browser window size
     # 
     # @param browser_width      The desired width
-    # @param browser_height     The desired
+    # @param browser_height     The desired height
     # 
     def resize_browser_window(browser_width, browser_height)
         $browser.window.move_to(0,0)
