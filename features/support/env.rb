@@ -25,23 +25,16 @@ if ENV['BROWSER']
         $driver = Headless.new
         $driver.start
 
-        caps = Selenium::WebDriver::Remote::Capabilities.firefox(accept_insecure_certs: true)
-        $browser ||= Watir::Browser.new :firefox desired_capabilities: caps
-
-    when 'CHROME'
-        $browser ||= Watir::Browser.new :chrome
+        capabilities = Selenium::WebDriver::Remote::Capabilities.firefox(accept_insecure_certs: true)
+        $browser ||= Watir::Browser.new :firefox, desired_capabilities: capabilities
 
     when 'FIREFOX'
         $browser ||= Watir::Browser.new :firefox
 
-    when 'SAFARI'
-        $browser ||= Watir::Browser.new :safari
+    when 'CHROME'
+        $browser ||= Watir::Browser.new :chrome
 
-else
-
-    # 
-    # Default to Chrome
-    #  
-    $browser ||= Watir::Browser.new :chrome
-
+    else
+        $browser ||= Watir::Browser.new :chrome
+    end
 end
