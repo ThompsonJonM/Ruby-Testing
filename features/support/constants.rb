@@ -3,14 +3,14 @@ class Const
     # 
     # Primary Test URLs
     # 
-    GOOGLE_HOMEPAGE_URL = 'https://www.google.com'
+    DEMO_QA_URL = 'https://www.demoqa.com'
 
     # 
     # Secondary Test URLs
     # 
-    GMAIL_URL = GOOGLE_HOMEPAGE_URL + '/gmail'
-    LOGIN_URL = 'https://accounts.google.com/signin'
-    SEARCH_RESULTS_URL = GOOGLE_HOMEPAGE_URL + '/search?source='
+    DEMO_QA_LINKS = {
+        :tooltip => DEMO_QA_URL + '/tooltip'
+    }
 
     # 
     # Messages
@@ -21,10 +21,8 @@ class Const
     # 
     # Users
     # 
-    GOOGLE_USER = {
-        :username => 'tests@qatesting.com',
-        :password => 'testing123'
-    }
+    # Space used for user data
+    # eg. USERNAME = 'super@user.com'
 
     # 
     # Data
