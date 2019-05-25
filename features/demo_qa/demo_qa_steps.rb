@@ -1,5 +1,5 @@
 Before do
-    @demoqa = DemoQA.new
+    @demoqa = DemoQA.new(@browser)
 end
 
 # 
@@ -11,5 +11,5 @@ Given(/^we visit Demo QA$/) do
 end
 
 Then(/^the Demo QA website should load properly$/) do
-    expect($browser.title).to eq('ToolsQA – Demo Website to Practice Automation – Demo Website to Practice Automation')
+    expect(@browser.title).to eq('ToolsQA – Demo Website to Practice Automation – Demo Website to Practice Automation')
 end
