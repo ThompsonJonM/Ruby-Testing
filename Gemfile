@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'cucumber'
-gem 'rspec'
-gem 'watir'
-gem 'selenium-webdriver'
-gem 'headless'
+group :test do 
+    gem 'cucumber'
+    gem 'rspec'
+    gem 'watir'
+    gem 'selenium-webdriver'
+    gem 'headless'
+end
